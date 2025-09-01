@@ -40,27 +40,84 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Contact form handling
     const contactForm = document.getElementById('contactForm');
+    
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
             
             // Get form data
             const formData = new FormData(contactForm);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const subject = formData.get('subject');
-            const message = formData.get('message');
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                subject: formData.get('subject'),
+                message: formData.get('message')
+            };
             
             // Simple validation
-            if (!name || !email || !subject || !message) {
-                alert('Please fill in all fields.');
+            if (!data.name || !data.email || !data.subject || !data.message) {
+                showMessage('Please fill in all fields', 'error');
                 return;
             }
             
-            // Show success message (in a real app, you'd send this to a server)
-            alert('Thank you for your message! I\'ll get back to you soon.');
-            contactForm.reset();
+            // Show loading state
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            try {
+                // Send to Telegram via backend
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                const result = await response.json();
+                
+                if (response.ok) {
+                    showMessage('Thank you! Your message has been sent successfully. I\'ll get back to you soon!', 'success');
+                    contactForm.reset();
+                } else {
+                    showMessage(result.error || 'Failed to send message. Please try again.', 'error');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                showMessage('Network error. Please check your connection and try again.', 'error');
+            } finally {
+                // Reset button
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }
         });
+    }
+    
+    // Show message function
+    function showMessage(text, type) {
+        // Remove existing messages
+        const existingMessage = document.querySelector('.form-message');
+        if (existingMessage) {
+            existingMessage.remove();
+        }
+        
+        // Create new message
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `form-message ${type}`;
+        messageDiv.textContent = text;
+        
+        // Insert before form
+        const form = document.getElementById('contactForm');
+        form.parentNode.insertBefore(messageDiv, form);
+        
+        // Auto remove after 5 seconds
+        setTimeout(() => {
+            if (messageDiv.parentNode) {
+                messageDiv.remove();
+            }
+        }, 5000);
     }
 });
 

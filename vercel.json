@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "telegram-handler.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/contact",
+      "destination": "/telegram-handler.js"
+    }
+  ]
+}
