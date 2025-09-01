@@ -2,96 +2,243 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adithyan J.R - Engineering Student & Developer Portfolio">
+    <meta name="keywords" content="Adithyan, Developer, Engineering, Portfolio, Java, Python, C++">
+    <meta name="author" content="Adithyan J.R">
     <link rel="stylesheet" href="necss.css">
-    <script src="conjs.js"></script>
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Adithyan J.R - Portfolio</title>
 </head>
 <body>
-    <header>
-    
-        <nav>
-            <ul>
-                
-                <li>
-                  <div class="headlogo">
-                        <img src="ajr.png" alt="ajr">
-                        </div>
-                  
-                 <a href="./">
-                      
-                     Home </a> 
-                </li>
-                <li>
-                    <a href="./contact"> Contact </a> 
-                </li>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="imagefolder/ajr.png" alt="Adithyan J.R">
+                <span>Adithyan J.R</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-        </nav>
-     </header>
-     <div class="split left">
-        <div class="centered">
-            <div class="im">
-                <img src="adipic.jpg" alt="imageofme">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-           
-            <h2>ADITHYAN .J.R </h2>
-            <p>Engineering Student</p>
-          </div>
-
-     </div>
-     <div class="split right">
-        <div class="centered">
-      
-            <h2>About Me</h2>
-            <div class="aboutme">
-              <p>
-                  Hello 👋🏻, I am Adithyan .J.R
-              </p>
-              <p>
-              An engineering student who is interested to learn or experience something new or challenges. I love to do coding, wishes to learn more about it, which will help me to enhance my current skill and knowledge. Even interested in research field like Quantum Computing and its impact in Cryptography.
-              </p>
-            </div>
-          </div>
-
-     </div>
-     <div class="split down">
-        <div class="centered">
-            <!-- <div class="centeredimg">
-
-    
-                <img src="bulb2.jpg" alt="image">
-               </div> -->
-               <h2>Skill </h2>
-              
-               <div class="skill">
-
-                <br>
-                <br> <br>
-                
-                  <div class="centeredimg2">
-                   
-                <span><img src="java.png" alt="imgjava"alt=" ">Java
-                </span>
-                
-                <p> <img src="download.jpg" alt="imgjava">Python
-                </p>
-                <p> <img src="c.png" alt="imgjava"alt=" ">C
-                </p>
-                <p> <img src="cpp.png" alt=""alt=" "> C++
-                </p>
-                <p><img src="kalib.jpg" alt=""alt=" "> Kali Linux
-                </p>
-                  </div>
-                </div>
-            
-      
         </div>
-       
+    </nav>
 
-        
-    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="imagefolder/adipic.jpg" alt="Adithyan J.R">
+                    <div class="image-border"></div>
+                </div>
+                <div class="hero-text">
+                    <h1>Hi, I'm <span class="highlight">Adithyan J.R</span></h1>
+                    <h2 class="typing-text">Engineering Student & Developer</h2>
+                    <p>Passionate about coding, quantum computing, and cryptography. Always eager to learn and take on new challenges.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
 
-    
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="intro">Hello 👋🏻, I am Adithyan J.R</p>
+                    <p>An engineering student with a passion for technology and innovation. I thrive on learning new concepts and tackling challenging problems. My journey in coding has been driven by curiosity and the desire to create meaningful solutions.</p>
+                    <p>I'm particularly interested in emerging technologies like Quantum Computing and its applications in Cryptography. This intersection of theoretical computer science and practical security fascinates me and drives my academic pursuits.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Programming Languages</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>2+</h3>
+                            <p>Years Learning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="imagefolder/java.png" alt="Java">
+                    </div>
+                    <h3>Java</h3>
+                    <p>Object-oriented programming, Spring framework</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="imagefolder/download.jpg" alt="Python">
+                    </div>
+                    <h3>Python</h3>
+                    <p>Data structures, algorithms, web development</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="imagefolder/c.png" alt="C">
+                    </div>
+                    <h3>C</h3>
+                    <p>System programming, memory management</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="imagefolder/cpp.png" alt="C++">
+                    </div>
+                    <h3>C++</h3>
+                    <p>Advanced OOP, competitive programming</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="70"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="imagefolder/kalib.jpg" alt="Kali Linux">
+                    </div>
+                    <h3>Kali Linux</h3>
+                    <p>Cybersecurity, penetration testing</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="65"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git & GitHub</h3>
+                    <p>Version control, collaboration</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="80"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="imagefolder/bulb2.jpg" alt="Project 1">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Quantum Computing Research</h3>
+                        <p>Exploring quantum algorithms and their applications in cryptography</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Qiskit</span>
+                            <span>Research</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="imagefolder/bulb2.jpg" alt="Project 2">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Security Analysis Tool</h3>
+                        <p>Penetration testing toolkit built with Kali Linux</p>
+                        <div class="project-tech">
+                            <span>Kali Linux</span>
+                            <span>Python</span>
+                            <span>Security</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="imagefolder/bulb2.jpg" alt="Project 3">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Algorithm Visualizer</h3>
+                        <p>Interactive tool for visualizing sorting and searching algorithms</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>JavaFX</span>
+                            <span>Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Adithyan J.R. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Adithyan1ninja" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/adithyan-j-r-479326213" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="conjs.js"></script>
 </body>
 </html>

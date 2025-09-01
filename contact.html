@@ -2,83 +2,155 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Adithyan J.R - Get in touch for collaborations and opportunities">
+    <meta name="keywords" content="Contact, Adithyan, Developer, Engineering, Email, LinkedIn">
+    <meta name="author" content="Adithyan J.R">
     <link rel="stylesheet" href="necss.css">
-    <script src="conjs.js"></script>
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Contact - Adithyan J.R</title>
 </head>
 <body>
-    <header>
-    
-        <nav>
-            <ul>
-                
-                <li>
-                  <div class="headlogo">
-                        <img src="ajr.png" alt="ajr">
-                        </div>
-                  
-                 <a href="./">
-                      
-                     Home </a> 
-                </li>
-                <li>
-                    <a href="./contact"> Contact </a> 
-                </li>
-            </ul>
-            <ul>
-                <div class="hero">
-                    <button onclick="myFunction()">DM</button>
-                </div>
-            </ul>
-        </nav>
-        <div class="ctext">
-            
-            <div class="cpic">
-                <p> <a href="https://linkedin.com/in/adithyan-j-r-479326213"><img src="linkb.png" ></a>
-                </p>
-                <p> <a href="https://github.com/Adithyan1ninja"><img src="gitblack.png" ></a>
-                </p>
-                
-              
-                </p>
-               
-            
-
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="imagefolder/ajr.png" alt="Adithyan J.R">
+                <span>Adithyan J.R</span>
             </div>
-           
-            <p>  
-                   
-             
-            </p> 
-            
-            <div class="dropdown">
-                <button onclick="show_hide()" class="button"><img src="emailb.jpg" alt="emaillog"></button>
-                 <center>
-                    <!-- dropdown list items will show when we click the drop button --> 
-                    <div id="list-items">
-                       <a href="#"> adityan2030@gmail.com </a>
-                       <a href="#"> jradityan2030@gmail.com</a>
-                      
-                    </div>
-                 </center>
-                 <div class="dropdown">
-                    <button onclick="show_hide2()" class="button"><img src="phone.jpg" alt="emaillog"></button>
-                     <center>
-                        <!-- dropdown list items will show when we click the drop button --> 
-                        <div id="list-items2">
-                           
-                           <a href="#"> 999999999</a>
-                          
-                        </div>
-                     </center>
-                 
-               
-                
-                
-
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        
-     </header></body>
-     </html>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h1>Let's Get In Touch</h1>
+                    <p class="contact-subtitle">I'm always open to discussing new opportunities, collaborations, or just having a friendly chat about technology and innovation.</p>
+                    
+                    <!-- Social Links -->
+                    <div class="social-grid">
+                        <a href="https://linkedin.com/in/adithyan-j-r-479326213" target="_blank" class="social-card">
+                            <div class="social-icon linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div class="social-content">
+                                <h3>LinkedIn</h3>
+                                <p>Connect with me professionally</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/Adithyan1ninja" target="_blank" class="social-card">
+                            <div class="social-icon github">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="social-content">
+                                <h3>GitHub</h3>
+                                <p>Check out my projects</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Contact Methods -->
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Email</h3>
+                                <div class="email-dropdown">
+                                    <button onclick="show_hide()" class="dropdown-btn">
+                                        <span>Click to view emails</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div id="list-items" class="dropdown-content">
+                                        <a href="mailto:adityan2030@gmail.com">adityan2030@gmail.com</a>
+                                        <a href="mailto:jradityan2030@gmail.com">jradityan2030@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Phone</h3>
+                                <div class="phone-dropdown">
+                                    <button onclick="show_hide2()" class="dropdown-btn">
+                                        <span>Click to view number</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div id="list-items2" class="dropdown-content">
+                                        <a href="tel:+919999999999">+91 999-999-9999</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <h2>Send Me a Message</h2>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Adithyan J.R. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Adithyan1ninja" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/adithyan-j-r-479326213" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="conjs.js"></script>
+</body>
+</html>
