@@ -7,6 +7,7 @@
     <meta name="keywords" content="Adithyan, Developer, Engineering, Portfolio, Java, Python, C++">
     <meta name="author" content="Adithyan J.R">
     <link rel="stylesheet" href="necss.css">
+    <link rel="stylesheet" href="modern-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -40,17 +41,57 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <div class="hero-image">
-                    <img src="imagefolder/adipic.jpg" alt="Adithyan J.R">
-                    <div class="image-border"></div>
-                </div>
                 <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-code"></i>
+                        <span>Available for opportunities</span>
+                    </div>
                     <h1>Hi, I'm <span class="highlight">Adithyan J.R</span></h1>
                     <h2 class="typing-text">Engineering Student & Developer</h2>
-                    <p>Passionate about coding, quantum computing, and cryptography. Always eager to learn and take on new challenges.</p>
+                    <p class="hero-description">Passionate about <strong>quantum computing</strong>, <strong>cryptography</strong>, and building innovative solutions. Always eager to learn and take on new challenges in the world of technology.</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Languages</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years</span>
+                        </div>
+                    </div>
                     <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            View My Work
+                        </a>
+                        <a href="contact.html" class="btn btn-secondary">
+                            <i class="fas fa-paper-plane"></i>
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="imagefolder/adipic.jpg" alt="Adithyan J.R">
+                        <div class="image-border"></div>
+                        <div class="floating-elements">
+                            <div class="floating-icon" style="--delay: 0s">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="floating-icon" style="--delay: 1s">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <div class="floating-icon" style="--delay: 2s">
+                                <i class="fas fa-atom"></i>
+                            </div>
+                            <div class="floating-icon" style="--delay: 3s">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -63,24 +104,66 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header">
+                <span class="section-badge">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate engineer exploring the frontiers of technology</p>
+            </div>
             <div class="about-content">
-                <div class="about-text">
-                    <p class="intro">Hello 👋🏻, I am Adithyan J.R</p>
-                    <p>An engineering student with a passion for technology and innovation. I thrive on learning new concepts and tackling challenging problems. My journey in coding has been driven by curiosity and the desire to create meaningful solutions.</p>
-                    <p>I'm particularly interested in emerging technologies like Quantum Computing and its applications in Cryptography. This intersection of theoretical computer science and practical security fascinates me and drives my academic pursuits.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>5+</h3>
-                            <p>Programming Languages</p>
+                <div class="about-main">
+                    <div class="about-text">
+                        <div class="intro-card">
+                            <div class="intro-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <div class="intro-content">
+                                <h3>Hello 👋🏻, I am Adithyan J.R</h3>
+                                <p>An engineering student with a passion for technology and innovation</p>
+                            </div>
                         </div>
-                        <div class="stat">
-                            <h3>10+</h3>
-                            <p>Projects Completed</p>
+                        
+                        <div class="about-cards">
+                            <div class="about-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <h4>Problem Solver</h4>
+                                <p>I thrive on learning new concepts and tackling challenging problems. My journey in coding has been driven by curiosity and the desire to create meaningful solutions.</p>
+                            </div>
+                            
+                            <div class="about-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-atom"></i>
+                                </div>
+                                <h4>Quantum Enthusiast</h4>
+                                <p>I'm particularly interested in emerging technologies like Quantum Computing and its applications in Cryptography. This intersection fascinates me and drives my academic pursuits.</p>
+                            </div>
                         </div>
-                        <div class="stat">
-                            <h3>2+</h3>
-                            <p>Years Learning</p>
+                    </div>
+                    
+                    <div class="about-visual">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>2022</h4>
+                                    <p>Started Engineering Journey</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>2023</h4>
+                                    <p>Discovered Quantum Computing</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot active"></div>
+                                <div class="timeline-content">
+                                    <h4>2024</h4>
+                                    <p>Building Advanced Projects</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -91,66 +174,110 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="imagefolder/java.png" alt="Java">
+            <div class="section-header">
+                <span class="section-badge">What I know</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Programming Languages</h3>
                     </div>
-                    <h3>Java</h3>
-                    <p>Object-oriented programming, Spring framework</p>
-                    <div class="skill-level">
-                        <div class="skill-bar" data-level="85"></div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="imagefolder/java.png" alt="Java">
+                            </div>
+                            <div class="skill-info">
+                                <h4>Java</h4>
+                                <p>OOP, Spring framework</p>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="85"></div>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="imagefolder/download.jpg" alt="Python">
+                            </div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <p>Data structures, algorithms</p>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="80"></div>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="imagefolder/c.png" alt="C">
+                            </div>
+                            <div class="skill-info">
+                                <h4>C</h4>
+                                <p>System programming</p>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="75"></div>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="imagefolder/cpp.png" alt="C++">
+                            </div>
+                            <div class="skill-info">
+                                <h4>C++</h4>
+                                <p>Advanced OOP</p>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="70"></div>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="imagefolder/download.jpg" alt="Python">
+                
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Technologies</h3>
                     </div>
-                    <h3>Python</h3>
-                    <p>Data structures, algorithms, web development</p>
-                    <div class="skill-level">
-                        <div class="skill-bar" data-level="80"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="imagefolder/c.png" alt="C">
-                    </div>
-                    <h3>C</h3>
-                    <p>System programming, memory management</p>
-                    <div class="skill-level">
-                        <div class="skill-bar" data-level="75"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="imagefolder/cpp.png" alt="C++">
-                    </div>
-                    <h3>C++</h3>
-                    <p>Advanced OOP, competitive programming</p>
-                    <div class="skill-level">
-                        <div class="skill-bar" data-level="70"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="imagefolder/kalib.jpg" alt="Kali Linux">
-                    </div>
-                    <h3>Kali Linux</h3>
-                    <p>Cybersecurity, penetration testing</p>
-                    <div class="skill-level">
-                        <div class="skill-bar" data-level="65"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-git-alt"></i>
-                    </div>
-                    <h3>Git & GitHub</h3>
-                    <p>Version control, collaboration</p>
-                    <div class="skill-level">
-                        <div class="skill-bar" data-level="80"></div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <img src="imagefolder/kalib.jpg" alt="Kali Linux">
+                            </div>
+                            <div class="skill-info">
+                                <h4>Kali Linux</h4>
+                                <p>Cybersecurity, pentesting</p>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="65"></div>
+                                    <span class="skill-percentage">65%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Git & GitHub</h4>
+                                <p>Version control</p>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="80"></div>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -160,66 +287,123 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
+            <div class="section-header">
+                <span class="section-badge">My work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing my passion for innovation and problem-solving</p>
+            </div>
+            
+            <div class="projects-showcase">
+                <div class="project-card featured">
+                    <div class="project-number">01</div>
                     <div class="project-image">
-                        <img src="imagefolder/bulb2.jpg" alt="Project 1">
+                        <img src="imagefolder/bulb2.jpg" alt="Quantum Computing Research">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
+                        <div class="project-category">
+                            <i class="fas fa-atom"></i>
+                            <span>Research</span>
+                        </div>
                         <h3>Quantum Computing Research</h3>
-                        <p>Exploring quantum algorithms and their applications in cryptography</p>
+                        <p>Exploring quantum algorithms and their applications in cryptography. This project investigates the potential of quantum computing in breaking traditional encryption methods.</p>
                         <div class="project-tech">
                             <span>Python</span>
                             <span>Qiskit</span>
                             <span>Research</span>
                         </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="imagefolder/bulb2.jpg" alt="Project 2">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>Featured</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-calendar"></i>
+                                <span>2024</span>
                             </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Security Analysis Tool</h3>
-                        <p>Penetration testing toolkit built with Kali Linux</p>
-                        <div class="project-tech">
-                            <span>Kali Linux</span>
-                            <span>Python</span>
-                            <span>Security</span>
-                        </div>
-                    </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="imagefolder/bulb2.jpg" alt="Project 3">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-number">02</div>
+                        <div class="project-image">
+                            <img src="imagefolder/bulb2.jpg" alt="Security Analysis Tool">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link" title="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Security</span>
+                            </div>
+                            <h3>Security Analysis Tool</h3>
+                            <p>Comprehensive penetration testing toolkit built with Kali Linux for vulnerability assessment.</p>
+                            <div class="project-tech">
+                                <span>Kali Linux</span>
+                                <span>Python</span>
+                                <span>Security</span>
                             </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Algorithm Visualizer</h3>
-                        <p>Interactive tool for visualizing sorting and searching algorithms</p>
-                        <div class="project-tech">
-                            <span>Java</span>
-                            <span>JavaFX</span>
-                            <span>Algorithms</span>
+                    
+                    <div class="project-card">
+                        <div class="project-number">03</div>
+                        <div class="project-image">
+                            <img src="imagefolder/bulb2.jpg" alt="Algorithm Visualizer">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link" title="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+                        <div class="project-content">
+                            <div class="project-category">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Visualization</span>
+                            </div>
+                            <h3>Algorithm Visualizer</h3>
+                            <p>Interactive tool for visualizing sorting and searching algorithms with real-time animations.</p>
+                            <div class="project-tech">
+                                <span>Java</span>
+                                <span>JavaFX</span>
+                                <span>Algorithms</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="projects-cta">
+                    <div class="cta-content">
+                        <h3>Want to see more?</h3>
+                        <p>Check out my GitHub for more projects and contributions</p>
+                        <a href="https://github.com/Adithyan1ninja" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-github"></i>
+                            View All Projects
+                        </a>
                     </div>
                 </div>
             </div>
